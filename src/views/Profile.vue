@@ -4,7 +4,7 @@
       <div
         class="neumorphism-inset-transition flex flex-col items-center w-full max-w-screen-lg h-auto rounded-lg p-10"
       >
-        <b class="text-2xl">Profile</b>
+        <b class="text-lg md:text-xl">Profile</b>
 
         <div class="neumorphism-transition w-16 h-16 rounded-full my-5">
           <img
@@ -14,12 +14,13 @@
           />
         </div>
 
-        <b class="leading-normal text-3xl">Li Ho</b>
-
+        <b class="leading-normal text-2xl md:text-3xl">Li Ho</b>
+        <p class="text-sm md:text-base m-1 p-1">Klang, Selangor</p>
         <div class="neumorphism-transition w-full h-auto rounded-lg p-5 my-5">
-          <p class="text-xl m-1 p-1">Klang, Selangor</p>
-          <p class="text-lg m-1 p-1">Front-end Developer - APAC Venture Sdn. Bhd.</p>
-          <p class="text-md m-1 p-1">Tunku Abdul Rahman University College</p>
+          <p class="text-sm md:text-base m-1 p-1">
+            <b>Front-end Developer - APAC Venture Sdn. Bhd.</b>
+          </p>
+          <p class="text-sm md:text-base m-1 p-1">Tunku Abdul Rahman University College</p>
         </div>
       </div>
     </section>
