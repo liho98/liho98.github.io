@@ -14,7 +14,7 @@
           />
         </div>
 
-        <b class="leading-normal text-2xl md:text-3xl">Li Ho</b>
+        <b class="leading-normal text-2xl md:text-3xl">Li Ho Tan</b>
         <p class="text-sm md:text-base m-1 p-1">Klang, Selangor</p>
         <div class="neumorphism-transition w-full h-auto rounded-lg p-5 my-5">
           <p class="text-sm md:text-base m-1 p-1">
