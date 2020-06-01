@@ -1,54 +1,86 @@
 <template>
-  <main class="flex justify-center items-center h-screen w-full">
-    <section class="fixed block h-full w-full">
+  <main class="main flex justify-center items-center h-screen w-full text-center text-gray-600">
+    <section class="h-full w-full flex justify-center items-center">
       <div
-        class="absolute top-0 w-full h-full bg-center bg-cover"
-        style="background-image: url('https://images.unsplash.com/photo-1576557522608-ab3341cc329f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');"
-      ></div>
-    </section>
-    <section class="relative py-16 w-10/12">
-      <div class="container mx-auto px-4">
-        <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full shadow-xl rounded-lg"
-          style="-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.5); "
-        >
-          <div class="px-6">
-            <div class="flex flex-wrap justify-center">
-              <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
-                <div class="relative">
-                  <img
-                    alt="..."
-                    src="https://avatars1.githubusercontent.com/u/44250267?s=400&u=1ffdc02d538b6394c54f2b554fd6da55c2c23481&v=4"
-                    class="shadow-xl rounded-full h-auto align-middle border-none -m-16"
-                    style="max-width: 150px;"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-24">
-              <h3 class="text-4xl font-black leading-normal mb-2 text-white mb-2">Li Ho</h3>
-              <div
-                class="text-sm leading-normal mt-0 mb-2 text-white font-bold uppercase"
-              >Klang, Selangor</div>
-              <div class="mb-2 text-white mt-10 font-semibold">Front-end Developer - APAC Venture Sdn. Bhd.</div>
-              <div class="mb-2 text-white font-semibold">Tunku Abdul Rahman University College</div>
-            </div>
-            <div class="mt-10 py-10 border-t border-gray-300 text-center">
-              <div class="flex flex-wrap justify-center">
-                <div class="w-full lg:w-9/12 px-4">
-                  <p class="mb-4 text-lg leading-relaxed text-white font-semibold">Beginner</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        class="neumorphism-inset-transition flex flex-col items-center w-full max-w-screen-lg h-auto rounded-lg p-10"
+      >
+        <b class="text-2xl">Profile</b>
+
+        <div class="neumorphism-transition w-16 h-16 rounded-full my-5">
+          <img
+            alt="Avatar"
+            src="https://avatars1.githubusercontent.com/u/44250267?s=400&u=1ffdc02d538b6394c54f2b554fd6da55c2c23481&v=4"
+            class="h-full w-full rounded-full"
+          />
+        </div>
+
+        <b class="leading-normal text-3xl">Li Ho</b>
+
+        <div class="neumorphism-transition w-full h-auto rounded-lg p-5 my-5">
+          <p class="text-xl m-1 p-1">Klang, Selangor</p>
+          <p class="text-lg m-1 p-1">Front-end Developer - APAC Venture Sdn. Bhd.</p>
+          <p class="text-md m-1 p-1">Tunku Abdul Rahman University College</p>
         </div>
       </div>
     </section>
   </main>
 </template>
+
 <script>
 export default {
   name: "Home",
   components: {}
 };
 </script>
+
+<style lang="scss">
+.main {
+  .neumorphism {
+    // border: 1px solid #fff;
+    background: rgb(241, 243, 246);
+    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+      inset 0 0 20px rgba(255, 255, 255, 0),
+      7px 7px 15px rgba(55, 84, 170, 0.15),
+      -7px -7px 20px rgba(255, 255, 255, 1),
+      inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+  }
+  .neumorphism-transition {
+    border: 1px solid #fff;
+    background: rgb(241, 243, 246);
+    box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+      inset 0 0 20px rgba(255, 255, 255, 0),
+      7px 7px 15px rgba(55, 84, 170, 0.15),
+      -7px -7px 20px rgba(255, 255, 255, 1),
+      inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+    &:hover {
+      box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+        inset -7px -7px 20px rgba(255, 255, 255, 1),
+        0px 0px 4px rgba(255, 255, 255, 0.2);
+    }
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .neumorphism-inset {
+    // border: 1px solid #fff;
+    background: rgb(241, 243, 246);
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+      inset -7px -7px 20px rgba(255, 255, 255, 1),
+      0px 0px 4px rgba(255, 255, 255, 0.2);
+  }
+  .neumorphism-inset-transition {
+    border: 1px solid #fff;
+    background: rgb(241, 243, 246);
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+      inset -7px -7px 20px rgba(255, 255, 255, 1),
+      0px 0px 4px rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+        inset 0 0 20px rgba(255, 255, 255, 0),
+        7px 7px 15px rgba(55, 84, 170, 0.15),
+        -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+    }
+    transition: box-shadow 0.3s ease-in-out;
+  }
+}
+</style>
