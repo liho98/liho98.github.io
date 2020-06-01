@@ -5,10 +5,8 @@ const port = 8080
 module.exports = {
     lintOnSave: false,
     productionSourceMap: false,
+    publicPath: '/',
     // outputDir: path.resolve(__dirname, 'dist'),
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/profile/'
-        : '/',
     devServer: {
         host,
         port,
