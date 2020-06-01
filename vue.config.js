@@ -4,14 +4,16 @@ const port = 8080
 
 module.exports = {
     lintOnSave: false,
-    productionSourceMap: false,
-    publicPath: '/',
+    // productionSourceMap: false,
     // outputDir: path.resolve(__dirname, 'dist'),
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/'
+        : '/',
     devServer: {
         host,
         port,
         public: `${host}:${port}`,
         disableHostCheck: true,
-        // https: false,
+        https: false,
     }
 }
