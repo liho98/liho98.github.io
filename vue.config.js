@@ -6,7 +6,7 @@ module.exports = {
     lintOnSave: false,
     productionSourceMap: false,
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/profile/'
+        ? '/'
         : '/',
     // outputDir: path.resolve(__dirname, 'dist'),
     devServer: {
