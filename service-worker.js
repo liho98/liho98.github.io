@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.38cc0b0f9f063f130db529acf4129be0.js"
+  "/precache-manifest.92538003d9132efc3ac8ec843a2bf332.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "liho98.github.io"});
